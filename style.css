@@ -119,11 +119,16 @@ nav ul li {
     
     #navigation ul {
         display: block;
+        max-width: 190px;
         margin: 2rem 2rem;
     }
 
     #navigation ul li {
         margin: 1rem 1rem;
+    }
+
+    #navigation ul li:first-child {
+        margin-top: 0.5rem;
     }
 
     #navigation ul li a {
@@ -207,7 +212,7 @@ nav ul li {
     border: 1px solid #fff;
     cursor: pointer;
     width: 220px;
-    transition: ease .2s;
+    transition: .2s;
     float: right;
     margin: 0 0.26rem 0 0;
 }
@@ -240,13 +245,12 @@ nav ul li {
 
     #contact-section{
         max-width: 700px;
-        grid-template-columns: 1fr;
     }
 
     #contact-form-wrap{
         max-width: 600px;
-        order: 2;
     }
+
     #contact-img img {
         max-width: 600px;
     }
@@ -256,34 +260,18 @@ nav ul li {
 
     #contact-section {
         max-width: 600px;
-        grid-template-columns: 1fr;
-    }
-    
-    #contact-form-wrap {
-        order: 1;
     }
 
     #contact-form-wrap form input[type="submit"] {
         width: 170px;
     }
-
 }
 
 @media (max-width: 610px) {
 
     #contact-section {
         max-width: 450px;
-        grid-template-columns: 1fr;
         padding: 4rem 0rem;
-    }
-    
-    #contact-form-wrap {
-        order: 1;
-        justify-self: center;
-    }
-    
-    #contact-img {
-        justify-self: center;
     }
 }
 
@@ -292,47 +280,22 @@ nav ul li {
  
     #contact-section {
         max-width: 350px;
-        grid-template-columns: 1fr;
-        padding: 4rem 0rem;
-
     }
     
-    #contact-form-wrap {
-        order: 1;
-        justify-self: center;
-    }
-
-    #contact-img {
-        justify-self: center;
-    }
-
     #contact-form-wrap form input[type="submit"] {
         width: 120px;
     }
-
 }
 
 @media (max-width: 380px) {
  
     #contact-section {
         max-width: 290px;
-        grid-template-columns: 1fr;
-        padding: 4rem 0rem;
-
     }
     
-    #contact-form-wrap {
-        order: 1;
-        justify-self: center;
-    }
-
-    #contact-img {
-        justify-self: center;
-    }
     #contact-form-wrap form input[type="submit"] {
         width: 90px;
     }
-
 }
 
 /* ------------------------ M A I N ------------------------ */
